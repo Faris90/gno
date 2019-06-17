@@ -31,6 +31,9 @@ bot.on('messageCreate', (msg) => {                     // When a message is crea
      console.log("channel ID is " + msg.channel.id)
     }// Don't even think about editing this.
      }
+});bot.on('messageCreate', (msg) => {                     // When a message is created
+cooldown = true;
+ setTimeout(function(){cooldown = false}, 300000);
 });
 function gnome  (channel,value) {
 //bot.on('messageCreate', (msg) => {                     // When a message is created
