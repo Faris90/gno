@@ -33,7 +33,7 @@ bot.on('messageCreate', (msg) => {                     // When a message is crea
      }
 });bot.on('messageCreate', (msg) => {                     // When a message is created
 cooldown = true;
- setTimeout(function(){cooldown = false}, 300000);
+ setTimeout(function(){cooldown = false}, 1000);
 });
 function gnome  (channel,value) {
 //bot.on('messageCreate', (msg) => {                     // When a message is created
