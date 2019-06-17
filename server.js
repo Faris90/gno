@@ -1,5 +1,5 @@
 const Eris = require('eris');
- 
+var cooldown = false
 const bot = new Eris("NTE1MzY0NjU1MzgwNTYxOTI0.XNNSDQ.xyRbcMdDyQhY8jO3cr9PurESn7c");   // Replace DISCORD_BOT_TOKEN in .env with your bot accounts token
  var http = require("http");
 setInterval(function() {
@@ -24,11 +24,13 @@ var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
  "gUcK yOu I aM a RoBlOxIaN","go commit die"
 ];
 bot.on('messageCreate', (msg) => {                     // When a message is created
-    if(msg.content.includes('woo!help')) {                 // If the message content includes "1337"
+     if(!cooldown) {
+ if(msg.content.includes('woo!help')) {                 // If the message content includes "1337"
        // bot.createMessage(msg.channel.id, 'Here are the Beta commands! \nThank you beta tester of this bot!\n p**!**desc: Shows the description in a slightly verbose way. \n p**!**mee6: Shows the MEE6 official site \n p**!**help: Shows this message \n p**!**channel: Shows EternalMakaush Channel \n p**!**server: Sends a link to the bot. \n p**!**oros: Sends a picture of Oros. \n p**!**update: This will give you the version and what beta it is. \n p**!**modded ftb: Gives you the link of the Modded FTB. \n p**!**private server: Gives you the link of our private server \n p**!**changelog: Shows the Changelog from before UpTimeRobot uptime reloader \n p**!**Void: Shows a picture of Soundwaves tank. \n p**!**bullet: Shows Makaushs private server');  // Send a message in the same channel with "damn it"
         bot.createMessage(msg.channel.id,'Here are the thicc commands \n woo**!**gnome: Gnomed. \n woo**!**nut: Ｈｏｎｅｙ　Gｎｕｔ　ヴ蒸曖 \n woo**!**beter: Peter griffin \n woo**!**mee6: Get attention of mee6 \n woo**!**moana: watch moana \n woo**!**roblox: commit die')
      console.log("channel ID is " + msg.channel.id)
     }// Don't even think about editing this.
+     }
 });
 function gnome  (channel,value) {
 //bot.on('messageCreate', (msg) => {                     // When a message is created
@@ -41,18 +43,22 @@ function gnome  (channel,value) {
 bot.on('messageCreate', (msg) => {                     // When a message is created
     if(msg.content.includes('woo!gnome')) {                 // If the message content includes "1337"
        // bot.createMessage(msg.channel.id, 'Here are the Beta commands! \nThank you beta tester of this bot!\n p**!**desc: Shows the description in a slightly verbose way. \n p**!**mee6: Shows the MEE6 official site \n p**!**help: Shows this message \n p**!**channel: Shows EternalMakaush Channel \n p**!**server: Sends a link to the bot. \n p**!**oros: Sends a picture of Oros. \n p**!**update: This will give you the version and what beta it is. \n p**!**modded ftb: Gives you the link of the Modded FTB. \n p**!**private server: Gives you the link of our private server \n p**!**changelog: Shows the Changelog from before UpTimeRobot uptime reloader \n p**!**Void: Shows a picture of Soundwaves tank. \n p**!**bullet: Shows Makaushs private server');  // Send a message in the same channel with "damn it"
-        bot.createMessage(msg.channel.id,'https://www.youtube.com/watch?v=6n3pFFPSlW4')
+       if(!cooldown) {
+     bot.createMessage(msg.channel.id,'https://www.youtube.com/watch?v=6n3pFFPSlW4')
        console.log("channel ID is " + msg.channel.id)
+       }
     }// Don't even think about editing this.
 });
 
 bot.on('messageCreate', (msg) => {                     // When a message is created
     if(msg.content.includes('woo!roblox')) {                 // If the message content includes "1337"
        // bot.createMessage(msg.channel.id, 'Here are the Beta commands! \nThank you beta tester of this bot!\n p**!**desc: Shows the description in a slightly verbose way. \n p**!**mee6: Shows the MEE6 official site \n p**!**help: Shows this message \n p**!**channel: Shows EternalMakaush Channel \n p**!**server: Sends a link to the bot. \n p**!**oros: Sends a picture of Oros. \n p**!**update: This will give you the version and what beta it is. \n p**!**modded ftb: Gives you the link of the Modded FTB. \n p**!**private server: Gives you the link of our private server \n p**!**changelog: Shows the Changelog from before UpTimeRobot uptime reloader \n p**!**Void: Shows a picture of Soundwaves tank. \n p**!**bullet: Shows Makaushs private server');  // Send a message in the same channel with "damn it"
-      var woo = nome[Math.floor(Math.random()*myArray.length)];
+     if(!cooldown) {
+     var woo = nome[Math.floor(Math.random()*myArray.length)];
       bot.createMessage(msg.channel.id,woo)
        console.log("channel ID is " + msg.channel.id)
     }// Don't even think about editing this.
+    }
 });
 bot.on('messageCreate', (msg) => {                     // When a message is created
     //if(msg.content.includes(':nome:')) {                 // If the message content includes "1337"
@@ -64,7 +70,8 @@ bot.on('messageCreate', (msg) => {                     // When a message is crea
 bot.on('messageCreate', (msg) => {                     // When a message is created
     if(msg.content.includes('!ping')) {                 // If the message content includes "1337"
        // bot.createMessage(msg.channel.id, 'Here are the Beta commands! \nThank you beta tester of this bot!\n p**!**desc: Shows the description in a slightly verbose way. \n p**!**mee6: Shows the MEE6 official site \n p**!**help: Shows this message \n p**!**channel: Shows EternalMakaush Channel \n p**!**server: Sends a link to the bot. \n p**!**oros: Sends a picture of Oros. \n p**!**update: This will give you the version and what beta it is. \n p**!**modded ftb: Gives you the link of the Modded FTB. \n p**!**private server: Gives you the link of our private server \n p**!**changelog: Shows the Changelog from before UpTimeRobot uptime reloader \n p**!**Void: Shows a picture of Soundwaves tank. \n p**!**bullet: Shows Makaushs private server');  // Send a message in the same channel with "damn it"
-        bot.createMessage(msg.channel.id,'gnong')
+        
+     bot.createMessage(msg.channel.id,'gnong')
       
       
        console.log("channel ID is " + msg.channel.id)
@@ -73,30 +80,38 @@ bot.on('messageCreate', (msg) => {                     // When a message is crea
 bot.on('messageCreate', (msg) => {                     // When a message is created
     if(msg.content.includes('woo!moana')) {                 // If the message content includes "1337"
        // bot.createMessage(msg.channel.id, 'Here are the Beta commands! \nThank you beta tester of this bot!\n p**!**desc: Shows the description in a slightly verbose way. \n p**!**mee6: Shows the MEE6 official site \n p**!**help: Shows this message \n p**!**channel: Shows EternalMakaush Channel \n p**!**server: Sends a link to the bot. \n p**!**oros: Sends a picture of Oros. \n p**!**update: This will give you the version and what beta it is. \n p**!**modded ftb: Gives you the link of the Modded FTB. \n p**!**private server: Gives you the link of our private server \n p**!**changelog: Shows the Changelog from before UpTimeRobot uptime reloader \n p**!**Void: Shows a picture of Soundwaves tank. \n p**!**bullet: Shows Makaushs private server');  // Send a message in the same channel with "damn it"
-        bot.createMessage(msg.channel.id,'https://media.discordapp.net/attachments/487031625679503360/576425900556419085/image0.jpg?width=600&height=329')
+         if(!cooldown) {
+     bot.createMessage(msg.channel.id,'https://media.discordapp.net/attachments/487031625679503360/576425900556419085/image0.jpg?width=600&height=329')
        console.log("channel ID is " + msg.channel.id)
     }// Don't even think about editing this.
+    }
 });
 bot.on('messageCreate', (msg) => {                     // When a message is created
     if(msg.content.includes('woo!mee6')) {                 // If the message content includes "1337"
        // bot.createMessage(msg.channel.id, 'Here are the Beta commands! \nThank you beta tester of this bot!\n p**!**desc: Shows the description in a slightly verbose way. \n p**!**mee6: Shows the MEE6 official site \n p**!**help: Shows this message \n p**!**channel: Shows EternalMakaush Channel \n p**!**server: Sends a link to the bot. \n p**!**oros: Sends a picture of Oros. \n p**!**update: This will give you the version and what beta it is. \n p**!**modded ftb: Gives you the link of the Modded FTB. \n p**!**private server: Gives you the link of our private server \n p**!**changelog: Shows the Changelog from before UpTimeRobot uptime reloader \n p**!**Void: Shows a picture of Soundwaves tank. \n p**!**bullet: Shows Makaushs private server');  // Send a message in the same channel with "damn it"
-        bot.createMessage(msg.channel.id,'What did you call me you little shit?')
+       if(!cooldown) {
+     bot.createMessage(msg.channel.id,'What did you call me you little shit?')
        console.log("channel ID is " + msg.channel.id)
+       }
     }// Don't even think about editing this.
 });
 bot.on('messageCreate', (msg) => {                     // When a message is created
     if(msg.content.includes('woo!beter')) {                 // If the message content includes "1337"
        // bot.createMessage(msg.channel.id, 'Here are the Beta commands! \nThank you beta tester of this bot!\n p**!**desc: Shows the description in a slightly verbose way. \n p**!**mee6: Shows the MEE6 official site \n p**!**help: Shows this message \n p**!**channel: Shows EternalMakaush Channel \n p**!**server: Sends a link to the bot. \n p**!**oros: Sends a picture of Oros. \n p**!**update: This will give you the version and what beta it is. \n p**!**modded ftb: Gives you the link of the Modded FTB. \n p**!**private server: Gives you the link of our private server \n p**!**changelog: Shows the Changelog from before UpTimeRobot uptime reloader \n p**!**Void: Shows a picture of Soundwaves tank. \n p**!**bullet: Shows Makaushs private server');  // Send a message in the same channel with "damn it"
-       var peter = myArray[Math.floor(Math.random()*myArray.length)];
+      if(!cooldown) {
+     var peter = myArray[Math.floor(Math.random()*myArray.length)];
       bot.createMessage(msg.channel.id,peter)
                           console.log("channel ID is " + msg.channel.id)
     }// Don't even think about editing this.
+    }
 });
 bot.on('messageCreate', (msg) => {                     // When a message is created
     if(msg.content.includes('woo!nut')) {                 // If the message content includes "1337"
        // bot.createMessage(msg.channel.id, 'Here are the Beta commands! \nThank you beta tester of this bot!\n p**!**desc: Shows the description in a slightly verbose way. \n p**!**mee6: Shows the MEE6 official site \n p**!**help: Shows this message \n p**!**channel: Shows EternalMakaush Channel \n p**!**server: Sends a link to the bot. \n p**!**oros: Sends a picture of Oros. \n p**!**update: This will give you the version and what beta it is. \n p**!**modded ftb: Gives you the link of the Modded FTB. \n p**!**private server: Gives you the link of our private server \n p**!**changelog: Shows the Changelog from before UpTimeRobot uptime reloader \n p**!**Void: Shows a picture of Soundwaves tank. \n p**!**bullet: Shows Makaushs private server');  // Send a message in the same channel with "damn it"
-        bot.createMessage(msg.channel.id,'https://ih0.redbubble.net/image.295060969.3129/ap,550x550,16x12,1,transparent,t.u3.png')
+        if(!cooldown) {
+     bot.createMessage(msg.channel.id,'https://ih0.redbubble.net/image.295060969.3129/ap,550x550,16x12,1,transparent,t.u3.png')
    console.log("channel ID is " + msg.channel.id)
+        }
     }// Don't even think about editing this.
 });
 bot.editStatus('online', {
