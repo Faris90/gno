@@ -1,6 +1,6 @@
 const Eris = require('eris');
  
-const bot = new Eris(process.env.DISCORD_BOT_TOKEN);   // Replace DISCORD_BOT_TOKEN in .env with your bot accounts token
+const bot = new Eris("NTE1MzY0NjU1MzgwNTYxOTI0.XQg1-w.73ItDhp0UHX6MGHA3G_sVrRdTMo");   // Replace DISCORD_BOT_TOKEN in .env with your bot accounts token
  var http = require("http");
 setInterval(function() {
     //http.get("http://giddy-plain.glitch.me"); //console.log('ping!')
@@ -132,4 +132,4 @@ app.get('/say', (req, res) => {
   res.send('moe');
 })
 
-app.listen(8080)
+app.listen(Process.env.PORT || 8080)
